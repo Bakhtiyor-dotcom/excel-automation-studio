@@ -10,6 +10,14 @@ st.markdown('''<style>
 .block-container{padding-top:2rem;max-width:1250px}
 [data-testid="stMetric"]{background:rgba(100,116,139,.12);padding:18px;border-radius:12px;border:1px solid rgba(148,163,184,.3)}
 [data-testid="stMetricLabel"], [data-testid="stMetricValue"]{color:inherit!important}
+[data-testid="stMetricValue"] {
+    font-size: clamp(1.1rem, 1.6vw, 1.8rem);
+    overflow-wrap: anywhere;
+}
+
+[data-testid="stMetric"] {
+    min-width: 0;
+}
 h1{letter-spacing:-.035em}
 </style>''', unsafe_allow_html=True)
 st.title("Excel Automation Studio")
